@@ -1,0 +1,27 @@
+exercicio1
+select clientes.nome, interacoes.tipo
+from clientes
+left join interacoes
+on clientes.cliente_id = interacoes.cliente_id
+
+exercicio2
+SELECT o.orcamento_id, o.categoria, o.valor_planejado, t.transacao_id, t.valor, t.tipo
+FROM orcamentos o
+RIGHT JOIN transacoes t ON o.categoria = t.tipo;
+
+exercicio3
+select clientes.nome, interacoes.tipo
+from clientes
+left join interacoes
+on clientes.cliente_id = interacoes.cliente_id
+
+exercicio4
+select produtos.nome as Produto, fornecedores.nome as Quem_Forneceu
+from produtos
+left join fornecedores
+on produtos.fornecedor_id = fornecedores.fornecedor_id
+
+exercio5
+SELECT c.cliente_id, c.nome AS nome_cliente, pc.campanha_id
+FROM clientes c
+LEFT JOIN participacoes_campanha pc ON c.cliente_id = pc.cliente_id
